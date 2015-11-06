@@ -24,12 +24,18 @@ public class GameFrame extends JFrame{
         this.add(GUIAssets.gallows);
         this.add(GUIAssets.word);
         this.add(GUIAssets.keyBoard);
+        this.add(GUIAssets.statsPanel);
         this.add(GUIAssets.diffButtonsPanel);
         
-        GUIAssets.diffButtonsPanel.addKeyListener(GUIAssets.keyBoard);
+        GUIAssets.optionMenu.addKeyListener(GUIAssets.keyBoard);
         GUIAssets.gallows.addKeyListener(GUIAssets.keyBoard);
         GUIAssets.word.addKeyListener(GUIAssets.keyBoard);
-        this.addKeyListener(GUIAssets.keyBoard);
+        GUIAssets.keyBoard.addKeyListener(GUIAssets.keyBoard);
+        GUIAssets.statsPanel.addKeyListener(GUIAssets.keyBoard);
+        GUIAssets.diffButtonsPanel.addKeyListener(GUIAssets.keyBoard);
+        
+        
+        addKeyListener(GUIAssets.keyBoard);
         
         this.pack();
     }

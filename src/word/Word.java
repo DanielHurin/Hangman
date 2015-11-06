@@ -152,6 +152,13 @@ public class Word {
             GUIAssets.gallows.badGuess();
     }
     
+    public boolean checkWin(){
+        if(currentWordBlanks.indexOf("_")==-1)
+            return true;
+        return false;
+            
+    }
+    
     public void generateBlanks(){
         int x = 0;
         while(this.currentWord.length()>x){

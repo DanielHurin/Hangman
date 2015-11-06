@@ -54,13 +54,13 @@ public class Parameters {
      * Difficulty Buttons Panel Vars
      */
     
-    public static Dimension dificultyDimension = new Dimension(gameFrameDimension.width,gameFrameDimension.height/4);
+    public static Dimension difficultyDimension = new Dimension(gameFrameDimension.width, (int) (gameFrameDimension.height/24));
     
     public static Point difficultyPanelLocation = new Point(0,keyBoardPoint.y+keyBoardDimension.height);
     
-    public static Dimension difficultyButtonDimension = new Dimension(gameFrameDimension.width/4,100);
+    public static Dimension difficultyButtonDimension = new Dimension(gameFrameDimension.width/4, 24);
     
-    public static int fontSize = difficultyButtonDimension.width / 6;
+    public static int fontSize = 24;
     
     /**
      * Option Menu Vars
@@ -71,5 +71,11 @@ public class Parameters {
     
     public static Point menuLocation = new Point(0,0);
     
+    /**
+     * State Panel Vars
+     */
     
+    public static Dimension statsDimension = new Dimension(gameFrameDimension.width,(difficultyDimension.height+difficultyPanelLocation.y));
+
+    public static Point statsLocation = new Point(0,difficultyPanelLocation.y+difficultyDimension.height);
 }

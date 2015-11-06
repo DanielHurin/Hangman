@@ -14,8 +14,10 @@ public class GUIAssets {
     
     public static WordBlanks word = new WordBlanks();
     
+    public static StatsPanel statsPanel = new StatsPanel();
+    
     //==MAINFRAME==\\
     
-    public static GameFrame gameFrame = new GameFrame();
+    public static volatile GameFrame gameFrame = new GameFrame();
     
 }

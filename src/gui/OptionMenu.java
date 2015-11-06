@@ -50,5 +50,12 @@ public class OptionMenu extends JMenuBar implements ActionListener{
         }
     }
     
+    public void toggleForfeit(){
+        forfeit.setEnabled(!forfeit.isEnabled());
+    }
+    
+    public boolean isForfeitEnabled(){
+        return forfeit.isEnabled();
+    }
     
 }

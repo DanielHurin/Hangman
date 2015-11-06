@@ -7,7 +7,7 @@ import utl.Parameters;
 
 public class DifficultyButtonsPanel extends JPanel{
     
-    private Dimension difficultyPanelDimension = Parameters.dificultyDimension;
+    private Dimension difficultyPanelDimension = Parameters.difficultyDimension;
     
     public DifficultyButtonsPanel(){
         init();

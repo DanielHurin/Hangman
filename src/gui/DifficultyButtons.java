@@ -4,19 +4,14 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.geom.AffineTransform;
-import java.awt.image.AffineTransformOp;
-import java.awt.image.BufferedImage;
 import javax.swing.ButtonGroup;
-import javax.swing.Icon;
 import javax.swing.JRadioButton;
-import javax.swing.UIManager;
 import utl.Console;
 import utl.Parameters;
 
 public class DifficultyButtons extends ButtonGroup implements ActionListener{
 
-    private Dimension difficultyDimensions = Parameters.dificultyDimension;
+    private Dimension difficultyDimensions = Parameters.difficultyDimension;
 
     private JRadioButton easyButton;
     private JRadioButton mediumButton;

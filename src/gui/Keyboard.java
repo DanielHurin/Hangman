@@ -21,8 +21,8 @@ public class Keyboard extends JPanel implements KeyListener{
         this.setLocation(Parameters.keyBoardPoint);
         
         for(int x = Parameters.ASCIIUPSTART; x < Parameters.ASCIIUPSTART+Parameters.NUMLETTERS; x++){
-            Console.outl("Created button: "+x);
             this.add(new KeyboardButton(x));
+            this.getComponent(x-Parameters.ASCIIUPSTART).addKeyListener(this);
         }
         
         this.setBackground(Color.lightGray);
@@ -32,6 +32,11 @@ public class Keyboard extends JPanel implements KeyListener{
     public void resetKeys(){
         for(int x = 0; x < this.getComponentCount(); x++)
             this.getComponent(x).setEnabled(true);
+    }
+    
+    public void disableKeys(){
+        for(int x = 0; x < this.getComponentCount(); x++)
+            this.getComponent(x).setEnabled(false);
     }
 
     @Override
